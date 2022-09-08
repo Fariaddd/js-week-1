@@ -1,209 +1,169 @@
-// console.log();
 
-//2. 
 
-// console.clear();
 
-// console.warn();
-// console.error();
-// consonle.table();
 
-//console.time and consone.timeEnd
+console.log("hello i am linked");
 
+// Example 1.
 
-// 1
+/**
+ * Add two numbers together
+ *  */
 
-//  console.log("Hello im here");
+function addNumbers(a, b) {
+    return a + b;
+}
 
-//  const name = "hesh";
+addNumbers();
 
-//  console.log(name);
+// Example 2.
 
-//  const responseDateOne = [
-//     {
-//         name: "name",
-//         age: "31"
-//     },
-//     {   name: "email",
-//         age:  "29"
+/**
+ * Display a greeting message to the user
+ **/
 
-//     }
-//  ]
+function greetingUsers() {
+    return `<span>Hello my friendly user</span>`;
+}
 
-//  const responseDateOtwo = [
-//     {
-//         name: "name",
-//         age: "31"
-//     },
-//     {   name: "email",
-//         age:  "29"
+greetingUsers();
 
-//     }
-//  ]
+// Example 3. @param
 
-//  console.log("responseDateOne",responseDateOne);
-//  console.log("responseDatetwo",responseDateOtwo);
+/**
+ * Add Three numbers together
+ * @param {number} a First Value
+ * @param {number} b Second Value
+ * @param {number} c Third Value
+ * **/
 
-//  console.log(1+2);
+function addThreeNumbers(a, b, c) {
+    return a + b + c;
+}
 
-//  const sum = 2+1;
-//  console.log("my " + "name " + "is " +  sum + "Fariad");
+addThreeNumbers(10, 20, 90);
 
-//  console.log(`my name is  Fariad ${sum} `);
+// Example 4. @return
 
-//  // 2 clear()
+// /**
+//  * @return {dataType} returnDescription **/
 
-//  // console.clear();
+/**
+ * Display cats names
+ * @param {string} cat1 First Value
+ * @param {string} cat2 Second Value
+ * @param {string} cat3 Third Value
+ * @param {string} cat4 Fourth Value
+ * @return {string} List of cat names
+ * **/
 
-//  // 3 console.table();
+function addFourCats(cat1, cat2, cat3, cat4) {
+    return `<ul>
+                <li>${cat1}</li>
+                <li>${cat2}</li>
+                <li>${cat3}</li>
+                <li>${cat4}</li>
+            </ul>`
+}
 
-//  console.log(responseDateOne);
-//  console.table(responseDateOne);
+addFourCats("milo", "andy", "shown", "lira");
 
+// Example 5.
 
+// @example
 
-// console.time
 
-// console.time(); // this starts the timer
-// console.timeEnd(); // this ends the timer 
 
-// function counter(){
-//     for(let i = 0; i < 3; i++){
-//         console.log(i);
-//     }
-// }
+/**
+ * Add Four numbers together
+ * @param {number} a First Value
+ * @param {number} b Second Value
+ * @param {number} c Third Value
+ * @param {number} d Fourth Value
+ * @return {number} Sum of Numbers
+ * @example
+ * ```js
+ * const a = 20;
+ * const b = 80;
+ * const c = 1;
+ * const d = 9;
+ * const sum = addFourNumbers(a, b, c, d);
+ * ```
+ * Expect sum to be 110
+ * **/
 
-// console.time("myTimer");
-// counter();
-// console.timeEnd("myTimer");
+function addFourNumbers(a, b, c, d) {
+    return a + b + c + d;
+}
 
-// console.time("myTimer");
-// counter();
-// console.timeEnd("myTimer");
+addFourNumbers(10, 20, 90, 100);
 
-// console.time("myTimer");
-// counter();
-// console.timeEnd("myTimer");
+// Example 6.
 
-// 1. 
+// Optional Parameters
+//
 
-// function sum(num1 , num2){
-//     return num1 + num2;
-// }
+// /**
+//  * @param {dataType} [optionalParamName] optionalParamNameDescription - we put the parameter in the bracket  example[b]
+//  */
 
+/**
+ * Multiply two numbers together {dataType}
+ * @param {number} a First Value
+ * @param {number} [b] Second Value
+ * @return {number} Multiplication of numbers
+ * */
 
-// let number1 = 10;
-// console.log(number1);
-// let number2 = 20;
+function multiplyNumbers(a, b = 10) {
+    return a * b;
+}
 
+multiplyNumbers(1);
 
-// const total = sum(number1,number2);
+// Example 7.
 
-// console.log("total:", total);
+/**
+ * Adds two numbers
+ * @typedef {(number|string)} NumberLike
+ **/
 
-// create a function which calculate the average of given 3 numbers 
-// please name this function getAverage
+function addTwoDigits(a, b) {
+    return a + b;
+}
 
-// function getAverg(num1,num2, num3){
-//     return(num1 + num2 + num3) /3;
+addTwoDigits();
 
-// }
 
-// let myAverage = getAverg(2, 4, 5);
+// Complex objects
 
-// console.log("myAvergae: ", myAverage);
+// Example 8.
 
+/**
+ * @param {Object} userObject blaablaablaa
+ * @param {string} userObject.name blaablaablaa
+ * @param {string} userObject.role blaablaablaa
+ * **/
 
-// const myArray = [1, 3, 4, 5];
 
-// // creare a function which gets the average of the numbers in this array
+function handleUserLogin({name, role}) {
+    loginUserWithToken();
+}
 
-// function getArrAverage(arr){
-    
-//     var total = 0;
-//     for(let i = 0; i < arr.lenght; i++){
-//         total += arr[i];
-//     }
+function loginUserWithToken() {
 
-//     const numberOfItemInArr = arr.lenght;
-   
-//     return total / numberOfItemInArr;
-// }
-// const resultaverage = getArrAverage(myArray);
+}
 
-// console.log("resultaverage", resultaverage);
+handleUserLogin({
+    name: "hesham",
+    role: "to be teacher"
+})
 
 
-// when you mke an API call
+const userLoginData = {
+    name: "hesham",
+    role: "to be teacher"
+}
+console.log(userLoginData)
+console.log(userLoginData.name)
 
-// https://catfact.ninja/fact
-
-
-// function getCatFacts(){
-//     fetch("https://catfact.ninja/facts")
-//     .then(response  => {
-//        return response.json();
-        
-//     })
-//     .then(jsonResponse => {
-//         console.log(jsonResponse);
-//         console.log(jsonResponse.data);
-//         console.log(jsonResponse.links);
-//     })
-//     .catch(error => {
-
-//     }
-
-//     )
-// }
-
-// getCatFacts();
-
-
-//  async function getCatyFacts(){
-//     const response = await fetch("https://catfact.ninja/facts")
-//     console.log("response", response);
-//     const catFacts = await response.json();
-//     console.log(catFacts);
-//     console.log(catFacts.data);
-//     return response;
-    
-
-// }
-
-// getCatyFacts();
-//______________
-
-// Another example of how to calculate the averege in the Array
-
-
-// const arr = [1, 2, 3, 4, 5];
-// var sum = 0;
-// for (var number of arr) {
-//     sum += number;
-// }
-// average = sum / arr.length;
-// console.log(average);
-//_________
-
-// Using ForEach()method to find the Avergae!!
-// const arr = [1, 2, 3, 4, 5];
-// var sum = 0;
-// arr.forEach(function(num) { sum += num });
-// average = sum / arr.length;
-// console.log(average);
-//______________
-
-//Find the Average with For Loop in JavaScript
-
-// const arr = [1, 2, 3, 4, 5];
-// var sum = 0;
-// for (var number of arr) {
-//     sum += number;
-// }
-// average = sum / arr.length;
-// console.log(average);
-
-
-
-
+// node_modules/jsdoc/jsdoc.js js/script.js
