@@ -172,8 +172,37 @@
 // }
 
 // getCatyFacts();
+//______________
+
+// Another example of how to calculate the averege in the Array
 
 
+// const arr = [1, 2, 3, 4, 5];
+// var sum = 0;
+// for (var number of arr) {
+//     sum += number;
+// }
+// average = sum / arr.length;
+// console.log(average);
+//_________
+
+// Using ForEach()method to find the Avergae!!
+// const arr = [1, 2, 3, 4, 5];
+// var sum = 0;
+// arr.forEach(function(num) { sum += num });
+// average = sum / arr.length;
+// console.log(average);
+//______________
+
+//Find the Average with For Loop in JavaScript
+
+// const arr = [1, 2, 3, 4, 5];
+// var sum = 0;
+// for (var number of arr) {
+//     sum += number;
+// }
+// average = sum / arr.length;
+// console.log(average);
 
 
 
