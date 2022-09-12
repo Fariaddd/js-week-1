@@ -6,6 +6,7 @@ console.log("hello i am linked");
 
 // Example 1.
 
+
 /**
  * Add two numbers together
  *  */
@@ -111,11 +112,11 @@ addFourNumbers(10, 20, 90, 100);
  * Multiply two numbers together {dataType}
  * @param {number} a First Value
  * @param {number} [b] Second Value
- * @return {number} Multiplication of numbers
+ * @returns {number} Multiplication of numbers
  * */
 
 function multiplyNumbers(a, b = 10) {
-    return a * b;
+    return a + b;
 }
 
 multiplyNumbers(1);
