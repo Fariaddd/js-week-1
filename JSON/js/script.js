@@ -21,9 +21,9 @@ console.log("userDataJSON JSON format", userDataJSON);
 
 //JSON.parse() convert data to JS  format
 
-// const userDataBackToJS = JSON.parse(userDataJSON);
+const userDataBackToJS = JSON.parse(userDataJSON);
 
-// console.log("userDataBackToJS", userDataBackToJS);
+console.log("userDataBackToJS", userDataBackToJS);
 
 //______________
 
